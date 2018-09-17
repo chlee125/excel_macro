@@ -22,12 +22,13 @@ for i in range(1, end_value*3 ,3):
     print(ws['A' + str(i)].value)
     print(ws['A' + str(i+1)].value)
     print(ws['A' + str(i+2)].value)
-    start_num+=1
-    start_value+=1
-    start_cover +=1
+    start_num += 1
+    start_value += 1
+    start_cover += 1
 
 # 엑셀 파일 저장
 save_name = input("저장할 파일명 입력 해라 : ")
 wb.save(save_name+".xlsx")
 wb.close()
 a = input("파일 확인해 보거라\n아무키나 누르면 종료가 된다.")
+exit()
