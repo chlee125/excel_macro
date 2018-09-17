@@ -18,7 +18,7 @@ start_cover = 1
 for i in range(1, end_value*3 ,3):
     ws['A' + str(i)] = '** Name: BC-' + str(start_num) + ' Type: ' + str(input_type)
     ws['A' + str(i + 1)] = '*Boundary'
-    ws['A' + str(i + 2)] = 'cover'+ str(start_cover) + ', 11, 11, ' + str(ws['J' + str(start_value)].value)
+    ws['A' + str(i + 2)] = 'cover'+ str(start_cover) + ', 11, 11, ' + str(ws['J' + str(start_value)].value) + '.'
     print(ws['A' + str(i)].value)
     print(ws['A' + str(i+1)].value)
     print(ws['A' + str(i+2)].value)
